@@ -1,0 +1,36 @@
+.form-container {
+  padding-top: 64px;
+  width: 400px;
+  margin: auto;
+}
+.page-title {
+  display: block !important;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.header {
+  margin-top: 20px;
+}
+.card-body,
+.comment-body {
+  cursor: pointer;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.14) !important;
+  transition: all 0.1s ease-in-out !important;
+}
+.card-body:hover,
+.comment-body:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-body {
+  margin-bottom: 30px !important;
+}
+.comment-body {
+  margin-bottom: 10px !important;
+}
+.fixed__card {
+  box-shadow: -10px 10px 40px rgba(0, 0, 0, 0.1) !important;
+  /* box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.14) !important; */
+}
