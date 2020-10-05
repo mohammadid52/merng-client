@@ -51,17 +51,11 @@ const PostCard = ({
           }
           position="bottom center"
         >
-          <Button as="div" labelPosition="right">
+          <Button as="div" labelPosition="right" as={Link} to={`/posts/${id}`}>
             <Button color="green" basic size="small">
               <Icon name="comments" />
             </Button>
-            <Label
-              as={Link}
-              to={`/posts/${id}`}
-              basic
-              color="green"
-              pointing="left"
-            >
+            <Label basic color="green" pointing="left">
               {commentCount}
             </Label>
           </Button>
