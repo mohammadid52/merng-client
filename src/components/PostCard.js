@@ -23,7 +23,7 @@ const PostCard = ({
   const { user } = useContext(AuthContext);
 
   return (
-    <Card className="card-body">
+    <Card className="card-body" as={Link} to={`/posts/${id}`}>
       <Card.Content>
         <Image
           floated="right"
@@ -38,9 +38,7 @@ const PostCard = ({
           <Card.Header>{username}</Card.Header>
         </MyPopup>
 
-        <Card.Meta as={Link} to={`/posts/${id}`}>
-          {moment(createdAt).fromNow(true)}
-        </Card.Meta>
+        <Card.Meta>{moment(createdAt).fromNow(true)}</Card.Meta>
         <Card.Description>{body}</Card.Description>
       </Card.Content>
       <Card.Content extra>
