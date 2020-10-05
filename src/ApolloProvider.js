@@ -8,7 +8,7 @@ import { setContext } from "apollo-link-context";
 
 const token = localStorage.getItem("jwtToken");
 const httpLink = createHttpLink({
-  uri: "http://localhost:8080",
+  uri: "https://gentle-cliffs-02998.herokuapp.com/",
 });
 
 const setAuthLink = setContext(() => {

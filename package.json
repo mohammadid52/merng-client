@@ -1,5 +1,4 @@
 {
-  "homepage": "http://mohammadid52.github.io/socialize",
   "name": "react-start",
   "version": "0.1.0",
   "private": true,
@@ -26,8 +25,6 @@
     "semantic-ui-react": "^2.0.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -55,5 +52,6 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.21.3",
     "eslint-plugin-react-hooks": "^4.1.2"
-  }
+  },
+  "proxy": "https://gentle-cliffs-02998.herokuapp.com/"
 }
