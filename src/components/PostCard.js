@@ -23,8 +23,8 @@ const PostCard = ({
   const { user } = useContext(AuthContext);
 
   return (
-    <Card className="card-body" as={Link} to={`/posts/${id}`}>
-      <Card.Content>
+    <Card className="card-body">
+      <Card.Content as={Link} to={`/posts/${id}`}>
         <Image
           floated="right"
           size="mini"
