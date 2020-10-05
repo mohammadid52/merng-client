@@ -1,9 +1,8 @@
 import React, { useContext } from "react";
-import { Card, Grid, Image, Transition } from "semantic-ui-react";
+import { Card, Transition } from "semantic-ui-react";
 import moment from "moment";
 import DeleteButton from "./DeleteButton";
 import { AuthContext } from "../context/auth";
-import randomImage from "./ImageCollections";
 
 const CommentSection = ({
   postId,
